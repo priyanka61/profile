@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+   
+     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.6.7/angular-route.min.js"></script>
+
+<style>
+    body{
+        background-color: #ddd;
+      
+    }
+   .image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   margin-left:40px;
+ 
+}
+
+h1 { 
+   position: absolute; 
+margin-top:-40px;
+   left: 0; 
+   width: 100%; 
+   font-size: 15px;
+   background-color: springgreen;
+   padding-bottom:10px; 
+   color:white;
+}
+h2 { 
+   position: absolute; 
+margin-top:-15px;
+   left: 0; 
+   width: 100%; 
+   font-size: 15px;
+   background-color:grey;
+   padding-bottom:10px; 
+   color:white;
+}
+ 
+ p{
+     font-size: 30px;
+     font-style: inherit;
+     padding-top:35px;
+     margin-left:-100px;
+     background-color: #ddd;
+ }
+ .div1{
+     padding-top: 70px;
+     margin-left:25px;
+     border-top-style: solid ;
+     border-top-color:springgreen;
+ }
+ 
+ .navbar-default .navbar-nav > li > a{
+    color: white;
+   
+}
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: darkgreen;
+   
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: -15px;
+
+}
+.form-control{
+width:850px;
+height:299px;
+background-color:#ddd;
+float: right;
+color:white;
+margin-top: -300px;
+
+}
+label{
+    padding-top: 12px;
+    font-size:20px;
+}
+
+
+.project h1{
+   width: 600px;
+    margin-left: 400px;
+    margin-top: -300px;
+}
+.project p {
+    font-size: 20px;
+    font-style: inherit;
+    padding-top: 35px;
+    margin-left: -100px;
+    background-color: #ddd;
+    float: right;
+    margin-top: -300px;
+    margin-right: 200px;
+    
+}
+
+
+
+</style>
+ </head>
+
+    <body>
+        <div ng-controller="myCtr">
+           
+       
+        <div class="container" style="height:80px ;width:auto; background-color: #ddd;">
+<P class="pull-left"> ..........USER PROFILE PAGE</P>
+           
+        </div>
+        <hr>
+        <div class="div1" style="background-color:white; height:360px; width:280px; ">
+        <span class="image">
+            <img src="p.jpg" >
+            <h1 style="opacity:.8;"> <center> friends </center> </h1>
+            <h2 > <center>send message </center> </h2>
+            
+        </span>
+       
+        </div>
+        <header ng-include="'view/header.html'"></header>
+        <main ng-view></main>
+      </div>
+ <script src=app.js></script>
+    </body>
+</html>
